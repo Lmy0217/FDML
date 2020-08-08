@@ -18,15 +18,17 @@ cd FDML
 ### datasets
 * Download the [CUHK03](http://www.ee.cuhk.edu.hk/~xgwang/CUHK_identification.html) (labeled & detected) dataset, then extract and place the file (cuhk-03.mat) in the folder `./datasets/cuhk03`.
 * Download the [CUHK01](http://www.ee.cuhk.edu.hk/~xgwang/CUHK_identification.html) dataset and extract the zip file (CAMPUS.zip) in the folder `./datasets/cuhk01` (now, this folder should contain a folder named 'campus').
-* Download the [VIPeR]() dataset and extract the file in the folder `./datasets/VIPeR` (now, this folder should contain two folders named 'cam_a' and 'cam_b'). Execute the script `./datasets/handle_viper.m` as
+* Download the [VIPeR](https://vision.soe.ucsc.edu/node/178) dataset and extract the file in the folder `./datasets/VIPeR` (now, this folder should contain two folders named 'cam_a' and 'cam_b'). Execute the script `./datasets/handle_viper.m` as
 
 ```shell
-matlab -r ./datasets/handle_viper.m`
+cd ./datasets
+matlab -r handle_viper
 ```
-* Download the [QMUL-iLIDS]() dataset and extract the file in the folder `./datasets/i-LIDS` (now, this folder should contain a folders named 'Persons'). Execute the script `./datasets/handle_ilids.m` as
+* Download the [QMUL-iLIDS](http://www.eecs.qmul.ac.uk/~jason/data/i-LIDS_Pedestrian.tgz) dataset and extract the file in the folder `./datasets/i-LIDS` (now, this folder should contain a folders named 'Persons'). Execute the script `./datasets/handle_ilids.m` as
 
 ```shell
-matlab -r ./datasets/handle_ilids.m`
+cd ./datasets
+matlab -r handle_ilids
 ```
 * Execute the script `datasets.lua` as
 
@@ -83,7 +85,7 @@ If you find this project useful in your research, please consider citing:
 @article{huang2020,
   title={Full-scaled Deep Metric Learning for Pedestrian Re-identification},
   author={Wei Huang, Mingyuan Luo, Peng Zhang, Yufei Zha},
-  journal={Multimedia Tools and A0pplications},
+  journal={Multimedia Tools and Applications},
   year={2020}
 }
 ```
